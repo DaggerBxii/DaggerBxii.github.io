@@ -275,4 +275,4 @@ window.addEventListener("load", () => {
   }, 100)
 })
 
-console.log("[v0] MRA International Limited - Enhanced with diverse color animations!")
+console.log("Index Script Loaded Successfully.")
