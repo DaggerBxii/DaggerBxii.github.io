@@ -386,6 +386,7 @@ section p {
 
 .contact-info {
   margin-top: 2rem;
+  text-align: center;
 }
 
 .contact-info p {
@@ -393,11 +394,13 @@ section p {
   margin: 1rem 0;
   /* Changed to light lime */
   color: #d4e896;
+  text-align: center;
 }
 
 .contact-info strong {
   /* Changed to bright lime accent */
   color: #b4d95a;
+  text-align: center;
 }
 
 /* Footer */
