@@ -1,32 +1,35 @@
 // Smooth scroll for navigation links
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", function (e) {
-    e.preventDefault()
     const targetId = this.getAttribute("href")
-    const targetSection = document.querySelector(targetId)
 
-    if (targetSection) {
-      targetSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      })
+    if (targetId.startsWith("#")) {
+      e.preventDefault()
+      const targetSection = document.querySelector(targetId)
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        })
+      }
+
+      // Add ripple effect to navigation links
+      const ripple = document.createElement("span")
+      const rect = this.getBoundingClientRect()
+      const size = Math.max(rect.width, rect.height)
+      const x = e.clientX - rect.left - size / 2
+      const y = e.clientY - rect.top - size / 2
+
+      ripple.style.width = ripple.style.height = size + "px"
+      ripple.style.left = x + "px"
+      ripple.style.top = y + "px"
+      ripple.classList.add("ripple")
+
+      this.appendChild(ripple)
+
+      setTimeout(() => ripple.remove(), 600)
     }
-
-    // Add ripple effect to navigation links
-    const ripple = document.createElement("span")
-    const rect = this.getBoundingClientRect()
-    const size = Math.max(rect.width, rect.height)
-    const x = e.clientX - rect.left - size / 2
-    const y = e.clientY - rect.top - size / 2
-
-    ripple.style.width = ripple.style.height = size + "px"
-    ripple.style.left = x + "px"
-    ripple.style.top = y + "px"
-    ripple.classList.add("ripple")
-
-    this.appendChild(ripple)
-
-    setTimeout(() => ripple.remove(), 600)
   })
 })
 
@@ -275,4 +278,4 @@ window.addEventListener("load", () => {
   }, 100)
 })
 
-console.log("Index Script Loaded Successfully.")
+console.log("[v0] MRA International Limited - Enhanced with diverse color animations!")

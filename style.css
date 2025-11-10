@@ -99,6 +99,8 @@ nav {
   z-index: 1000;
   box-shadow: 0 2px 15px rgba(26, 152, 114, 0.2);
   transition: all 0.3s ease;
+  /* Added responsive padding */
+  padding: 0.5rem 1rem;
 }
 
 nav.scrolled {
@@ -113,6 +115,8 @@ nav ul {
   list-style: none;
   flex-wrap: wrap;
   padding: 0.5rem 0;
+  /* Added gap for better spacing */
+  gap: 0.5rem;
 }
 
 nav ul li {
@@ -129,6 +133,8 @@ nav ul li a {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  /* Responsive font size */
+  font-size: 1rem;
 }
 
 nav ul li a::before {
@@ -420,13 +426,25 @@ footer p {
     font-size: 1.1rem;
   }
 
+  /* Mobile-optimized navigation */
+  nav {
+    padding: 0.3rem 0.5rem;
+  }
+
   nav ul {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.3rem 0;
+    gap: 0.3rem;
   }
 
   nav ul li {
-    margin: 0.3rem 0;
+    margin: 0.2rem;
+  }
+
+  nav ul li a {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.85rem;
   }
 
   section {
