@@ -388,15 +388,14 @@ section p {
   margin-top: 2rem;
 }
 
-/* Increased specificity to ensure override */
-section.contact-section .contact-info p {
+.contact-info p {
   font-size: 1.2rem;
+  margin: 1rem 0;
+  /* Changed to light lime */
   color: #d4e896;
-  text-align: center;
-  
-  /* Explicitly override section p rules */
-  max-width: none; /* Allow it to be full width */
-  margin: 1rem 0;  /* Override margin: 0 auto; */
+  text-align: ceter;
+  max-width: none;
+  margin: 1rem 0;
 }
 
 .contact-info strong {
