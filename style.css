@@ -386,21 +386,22 @@ section p {
 
 .contact-info {
   margin-top: 2rem;
-  text-align: center;
 }
 
-.contact-info p {
+/* Increased specificity to ensure override */
+section.contact-section .contact-info p {
   font-size: 1.2rem;
-  margin: 1rem 0;
-  /* Changed to light lime */
   color: #d4e896;
   text-align: center;
+  
+  /* Explicitly override section p rules */
+  max-width: none; /* Allow it to be full width */
+  margin: 1rem 0;  /* Override margin: 0 auto; */
 }
 
 .contact-info strong {
   /* Changed to bright lime accent */
   color: #b4d95a;
-  text-align: center;
 }
 
 /* Footer */
