@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events Timeline - MRA International Limited</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="events.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="parallax-header">
+    <div class="header-content fade-in">
+      <h1>Events Timeline</h1>
+      <p>Our journey in environmental sustainability</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="sticky-nav">
+    <ul>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="index.html#purpose" class="nav-link">Purpose</a></li>
+      <li><a href="index.html#materials" class="nav-link">Our Materials</a></li>
+      <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Timeline Section -->
+  <section class="timeline-section fade-section">
+    <div class="timeline-container">
+      
+      <!-- Event 1 -->
+      <div class="timeline-item" data-event="1">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">March 15, 2024</div>
+          <h3>Environmental Sustainability Summit</h3>
+          <p>MRA International participated in Jamaica's largest environmental summit, showcasing our recycling innovations.</p>
+          <button class="view-details-btn" data-event="1">View Details</button>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="timeline-item" data-event="2">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">June 8, 2024</div>
+          <h3>Community Recycling Workshop</h3>
+          <p>Hosted a hands-on workshop teaching local communities about effective recycling practices and waste management.</p>
+          <button class="view-details-btn" data-event="2">View Details</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Event Detail Modal -->
+  <div class="event-modal" id="eventModal">
+    <div class="modal-content">
+      <button class="close-modal">&times;</button>
+      <div class="modal-body">
+        <h2 id="modalTitle"></h2>
+        <div class="modal-date" id="modalDate"></div>
+        <div class="modal-description" id="modalDescription"></div>
+        <div class="modal-gallery" id="modalGallery"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MRA International Limited | All Rights Reserved</p>
+  </footer>
+
+  <script src="events.js"></script>
+</body>
+</html>
