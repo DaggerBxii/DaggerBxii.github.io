@@ -404,6 +404,12 @@ section p {
   color: #b4d95a;
 }
 
+#email {
+  color: #b4d95a;
+  text-decoration: none;
+  
+}
+
 /* Footer */
 footer {
   /* Changed to dark forest to teal gradient */
